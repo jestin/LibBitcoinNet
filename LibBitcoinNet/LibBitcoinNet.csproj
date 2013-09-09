@@ -33,8 +33,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Primatives\NetworkAddress.cs" />
+    <Compile Include="Primatives\InventoryVector.cs" />
+    <Compile Include="Primatives\Header.cs" />
+    <Compile Include="Primatives\VersionType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Primatives\" />
+  </ItemGroup>
 </Project>

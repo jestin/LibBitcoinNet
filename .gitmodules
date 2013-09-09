@@ -1,0 +1,3 @@
+[submodule "libbitcoin"]
+	path = libbitcoin
+	url = https://github.com/spesmilo/libbitcoin.git
