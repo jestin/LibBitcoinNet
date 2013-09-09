@@ -38,6 +38,16 @@
     <Compile Include="Primitives\InventoryVector.cs" />
     <Compile Include="Primitives\Header.cs" />
     <Compile Include="Primitives\VersionType.cs" />
+    <Compile Include="Primitives\Verack.cs" />
+    <Compile Include="Primitives\GetAddress.cs" />
+    <Compile Include="Primitives\GetBlocks.cs" />
+    <Compile Include="Primitives\OutputPoint.cs" />
+    <Compile Include="Primitives\InputPoint.cs" />
+    <Compile Include="Primitives\TransactionInput.cs" />
+    <Compile Include="Primitives\Script.cs" />
+    <Compile Include="Primitives\TransactionOutput.cs" />
+    <Compile Include="Primitives\OpCode.cs" />
+    <Compile Include="Primitives\Transaction.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
