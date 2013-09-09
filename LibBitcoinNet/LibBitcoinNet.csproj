@@ -34,13 +34,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Primatives\NetworkAddress.cs" />
-    <Compile Include="Primatives\InventoryVector.cs" />
-    <Compile Include="Primatives\Header.cs" />
-    <Compile Include="Primatives\VersionType.cs" />
+    <Compile Include="Primitives\NetworkAddress.cs" />
+    <Compile Include="Primitives\InventoryVector.cs" />
+    <Compile Include="Primitives\Header.cs" />
+    <Compile Include="Primitives\VersionType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Primatives\" />
+    <Folder Include="Primitives\" />
   </ItemGroup>
 </Project>

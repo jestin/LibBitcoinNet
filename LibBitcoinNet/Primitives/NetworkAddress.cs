@@ -1,6 +1,6 @@
 using System;
 
-namespace LibBitcoinNet.Primatives
+namespace LibBitcoinNet.Primitives
 {
 	public struct NetworkAddress
 	{
