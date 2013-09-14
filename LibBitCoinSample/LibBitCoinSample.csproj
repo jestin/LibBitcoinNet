@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8815E80C-4507-4F8F-9FED-977EB2D641E2}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>LibBitcoinNet</RootNamespace>
-    <AssemblyName>LibBitcoinNet</AssemblyName>
+    <ProjectGuid>{2DB342D4-1838-4245-B474-D046BFA7DAF8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LibBitCoinSample</RootNamespace>
+    <AssemblyName>LibBitCoinSample</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -19,7 +19,7 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -27,33 +27,20 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="Interop.cs" />
-    <Compile Include="Primitives\block_type.cs" />
-    <Compile Include="Primitives\block_header_type.cs" />
-    <Compile Include="Primitives\transaction_input_type.cs" />
-    <Compile Include="Primitives\script_type.cs" />
-    <Compile Include="Primitives\transaction_output_type.cs" />
-    <Compile Include="Primitives\get_address_type.cs" />
-    <Compile Include="Primitives\get_blocks_type.cs" />
-    <Compile Include="Primitives\header_type.cs" />
-    <Compile Include="Primitives\input_point.cs" />
-    <Compile Include="Primitives\network_address_type.cs" />
-    <Compile Include="Primitives\inventory_vector_type.cs" />
-    <Compile Include="Primitives\verack.cs" />
-    <Compile Include="Primitives\version_type.cs" />
-    <Compile Include="Primitives\opcode.cs" />
-    <Compile Include="Primitives\output_point.cs" />
-    <Compile Include="Primitives\transaction.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Primitives\" />
+    <ProjectReference Include="..\LibBitcoinNet\LibBitcoinNet.csproj">
+      <Project>{8815E80C-4507-4F8F-9FED-977EB2D641E2}</Project>
+      <Name>LibBitcoinNet</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

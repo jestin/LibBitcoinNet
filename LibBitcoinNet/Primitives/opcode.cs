@@ -1,9 +1,9 @@
 using System;
-using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace LibBitcoinNet.Primitives
 {
-	public enum OpCode
+	public enum opcode
 	{
 		Zero = 0,
 		Special = 1,
