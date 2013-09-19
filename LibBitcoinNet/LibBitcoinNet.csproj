@@ -51,9 +51,14 @@
     <Compile Include="Primitives\opcode.cs" />
     <Compile Include="Primitives\output_point.cs" />
     <Compile Include="Primitives\transaction.cs" />
+    <Compile Include="ThreadPool.cs" />
+    <Compile Include="Interfaces\INativeClass.cs" />
+    <Compile Include="BaseNativeClass.cs" />
+    <Compile Include="PaymentAddress.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Primitives\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>
