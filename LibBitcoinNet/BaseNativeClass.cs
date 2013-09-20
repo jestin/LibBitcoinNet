@@ -33,7 +33,7 @@ namespace LibBitcoinNet
 		{
 			if(NativeObject != IntPtr.Zero)
 			{
-				DisposeClass(NativeObject);
+				DisposeClass();
 				NativeObject = IntPtr.Zero;
 			}
 
@@ -43,7 +43,7 @@ namespace LibBitcoinNet
 			}
 		}
 
-		protected abstract void DisposeClass(IntPtr nativeClass);
+		protected abstract void DisposeClass();
 	}
 }
 

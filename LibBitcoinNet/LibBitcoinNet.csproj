@@ -55,6 +55,7 @@
     <Compile Include="Interfaces\INativeClass.cs" />
     <Compile Include="BaseNativeClass.cs" />
     <Compile Include="PaymentAddress.cs" />
+    <Compile Include="DeterministicWallet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

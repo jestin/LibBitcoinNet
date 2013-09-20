@@ -17,10 +17,11 @@ namespace LibBitCoinSample
 			}
 
 			//var threadPool = new ThreadPool(5);
-			//threadPool.Dispose();
 
 			//var address = new PaymentAddress(2, new byte[]{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 });
-			var address = new PaymentAddress("something");
+			//var address = new PaymentAddress("something");
+
+			var wallet = new DeterministicWallet();
 		}
 	}
 }

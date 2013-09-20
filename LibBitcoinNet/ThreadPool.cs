@@ -13,9 +13,9 @@ namespace LibBitcoinNet
 
 		#region implemented abstract members of LibBitcoinNet.BaseNativeClass
 
-		protected override void DisposeClass(IntPtr nativeClass)
+		protected override void DisposeClass()
 		{
-			DisposeThreadPool(nativeClass);
+			DisposeThreadPool(NativeObject);
 		}
 
 		#endregion
