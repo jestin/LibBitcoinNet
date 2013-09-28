@@ -56,6 +56,9 @@
     <Compile Include="BaseNativeClass.cs" />
     <Compile Include="PaymentAddress.cs" />
     <Compile Include="DeterministicWallet.cs" />
+    <Compile Include="Blockchain.cs" />
+    <Compile Include="Primitives\block_info.cs" />
+    <Compile Include="LevelDbBlockchain.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
