@@ -10,6 +10,7 @@ namespace LibBitcoinNet
 
 		public delegate double StoreBlockHandler(IntPtr errorCode, block_info blockInfo);
 		public delegate void StartHandler(IntPtr errorCode);
+		public delegate void ImportBlockHandler(IntPtr errorCode);
 
 		#endregion
 	}

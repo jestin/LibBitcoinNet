@@ -20,7 +20,7 @@ namespace LibBitcoinNet
 		//*************************************************************
 		// Test call that doesn't actuall exist in libbitcoin
 		//*************************************************************
-		[DllImport("libbitcoin.so", EntryPoint = "pinvoke_test")]
+		[DllImport("libbitcoin.so", EntryPoint = "pinvoke_test", CallingConvention = CallingConvention.Cdecl)]
 		public static extern void pinvoke_test();
 		//*************************************************************
 	}
